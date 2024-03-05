@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .badges {
+        @apply border-[1px] py-3 px-8 rounded-full;
+        @apply hover:-translate-y-2 duration-200;
+    }
+
+    .faq-question {
+        @apply text-white font-[400] text-sm xl:text-lg ;
+    }
+
+    .faq-ans {
+
+    }
+
+    .badge-images {
+        @apply object-cover h-4 xl:h-6;
+    }
+}
+
+@layer base {
+
+}
