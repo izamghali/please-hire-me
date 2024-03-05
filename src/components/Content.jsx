@@ -7,11 +7,11 @@ export default function Content(props) {
             
             <div id="profile" className="
                 absolute left-10 
-                bottom-[16rem]
-                xl:bottom-[18rem] 
+                bottom-[9rem]
+                xl:bottom-[10rem] 
                 2xl:bottom-[38%] 
+                duration-200
                 text-black
-                translate-y-10
                 
             ">
             {/* <div className="absolute bottom-[4rem] xl:bottom-[10rem] 2xl:bottom-[20rem] left-10 text-black duration-200"> */}

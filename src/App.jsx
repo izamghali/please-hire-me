@@ -8,7 +8,7 @@ import { greet, faqSlideIn, popUpAlert, showContentHero } from "./helpers"
 function App() {
 
   useEffect(() => {
-    // faqSlideIn()
+    faqSlideIn()
     popUpAlert()
 
     if (window.matchMedia("(max-width: 1280px)").matches) {

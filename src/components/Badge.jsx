@@ -3,7 +3,9 @@ import React, { useEffect } from "react"
 export default function Badge(props) {
 
     return (
-        <section className="absolute bottom-32 2xl:bottom-60 left-10 translate-y-10">
+        <section className="
+        absolute bottom-32 2xl:bottom-60 left-10 translate-y-10 duration-200
+        ">
 
             <h3 className="text-xl text-slate-100 font-light mb-2">Powered by: </h3>
             

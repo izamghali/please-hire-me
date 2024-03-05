@@ -16,6 +16,7 @@ export default function Hero(props) {
                 {/* <source src={heroAudio} type="audio/mp3" ></source> */}
             </audio>
 
+            {/* Greet */}
             <div className="
             absolute top-80 left-10
             lg:top-36

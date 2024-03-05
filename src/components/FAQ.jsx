@@ -8,8 +8,8 @@ export default function FAQ(props) {
 
             <div className="
                 absolute
-                lg:right-0 lg:bottom-10
-                xl:right-10 xl:bottom-40 
+                right-10 lg:bottom-10
+                xl:right-10 xl:bottom-20 
                 2xl:bottom-80 
                 w-[30rem] flex flex-col gap-2
                 ">
