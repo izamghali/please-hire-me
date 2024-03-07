@@ -7,9 +7,9 @@ export default function Content(props) {
             
             <div id="profile" className="
                 absolute left-10 
-                bottom-[9rem]
-                xl:bottom-[10rem] 
-                2xl:bottom-[38%] 
+                bottom-[14rem]
+                xl:bottom-[14rem] 
+                2xl:bottom-[25rem] 
                 duration-200
                 text-black
                 

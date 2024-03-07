@@ -6,6 +6,11 @@
     .badges {
         @apply border-[1px] py-3 px-8 rounded-full;
         @apply hover:-translate-y-2 duration-200;
+        @apply backdrop-blur-[2px];
+    }
+
+    .badge-images {
+        @apply object-cover h-4 xl:h-6;
     }
 
     .faq-question {
@@ -15,9 +20,21 @@
     .faq-ans {
 
     }
+    
+    .faq-btn {
+        @apply w-[48%] xl:w-fit;
+    }
 
-    .badge-images {
-        @apply object-cover h-4 xl:h-6;
+    .linked-text {
+        @apply hover:text-blue-400 underline;
+    }
+
+    .avatar-profile {
+        @apply w-8;
+    }
+
+    .avatar {
+        @apply border-[1px] ;
     }
 }
 
