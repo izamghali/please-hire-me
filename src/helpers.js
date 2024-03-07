@@ -75,7 +75,7 @@ export function faqSlideIn() {
     const tl = gsap.timeline()
 
     tl.set('#faqs', {
-        x: 520
+        x: 760
     })
     tl.to('#faqs', {
         x: 0, ease: 'power2', duration: 2,

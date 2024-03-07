@@ -11,7 +11,7 @@ export default function Badge({ videoIndex }) {
             
             <div className="flex gap-4">
                 {/* codecademy */}
-                <a id="badge-codecademy" href="https://www.codecademy.com/learn" target="_blank" className={`badges ${ videoIndex === 2 ? 'border-slate-800' : 'border-slate-200' }  ${ videoIndex === 0 || videoIndex === 3 ? 'bg-[rgba(255,255,255,0.35)]' : '' } `}>
+                <a id="badge-codecademy" href="https://www.codecademy.com/learn" target="_blank" className={`badges ${ videoIndex === 2 ? 'border-slate-800' : 'border-slate-200' }  ${ videoIndex === 0 || videoIndex === 1 ? 'bg-[rgba(255,255,255,0.35)]' : '' } `}>
                     <img className="badge-images" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Codecademy.svg" alt="" />
                 </a>
 
@@ -21,7 +21,7 @@ export default function Badge({ videoIndex }) {
                 </a>
 
                 {/* udemy */}
-                <a id="badge-udemy" href="https://www.udemy.com/" target="_blank" className={`badges ${ videoIndex === 2 ? 'border-slate-800' : 'border-slate-200' }  ${ videoIndex === 0 || videoIndex === 4 || videoIndex === 5 ? 'bg-[rgba(255,255,255,0.35)]' : '' } `}>
+                <a id="badge-udemy" href="https://www.udemy.com/" target="_blank" className={`badges ${ videoIndex === 2 ? 'border-slate-800' : 'border-slate-200' }  ${ videoIndex === 0 ? 'bg-[rgba(255,255,255,0.35)]' : '' } `}>
                     <img className="badge-images" src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg" alt="" />
                 </a>
             </div>
