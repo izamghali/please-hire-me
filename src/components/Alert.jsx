@@ -16,7 +16,6 @@ export default function Alert({ videoIndex }) {
         popOut()
     }
 
-    // ${ videoIndex === 0 ? 'border-slate-50 text-slate-50' : '' }
     return (
         <div className="relative flex justify-center ">
             <div role="alert" className={`

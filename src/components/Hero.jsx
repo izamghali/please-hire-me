@@ -18,7 +18,7 @@ export default function Hero({ videoIndex }) {
     // 2 - flower
     // 3 - disk 
     // 4 - greenball 
-    // 5 - fireball - alert text white border white deny button
+    // 5 - fireball 
 
     return (
         <section className="relative" onLoad={greet} >

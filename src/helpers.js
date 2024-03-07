@@ -110,3 +110,28 @@ export function showContentHero() {
         opacity: 1, delay: 2.5
     })
 }
+
+export function badgesSlideIn() {
+    const tl = gsap.timeline()
+    tl.fromTo('#heading-badge', {
+        y:140, 
+    }, {
+        y:0, delay: 7, ease: 'power1', duration: 2
+    })
+    tl.fromTo('#badge-codecademy', {
+        y:120, 
+    }, {
+        y:0, ease: 'expo.out', duration: 1
+    })
+    tl.fromTo('#badge-purwadhika', {
+        y:120, 
+    }, {
+        y:0, ease: 'expo.out', duration: 1
+    })
+    tl.fromTo('#badge-udemy', {
+        y:120, 
+    }, {
+        y:0, ease: 'expo.out', duration: 1
+    })
+    
+}
