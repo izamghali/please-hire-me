@@ -14,7 +14,7 @@ export default function Hero({ videoIndex }) {
     ]
 
     // 0 - ocean 
-    // 1 - gold
+    // 1 - gold 
     // 2 - flower
     // 3 - disk 
     // 4 - greenball 
