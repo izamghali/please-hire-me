@@ -15,7 +15,7 @@ export default function Hero({ videoIndex }) {
     // 2 - flower
 
     return (
-        <section className="relative" onLoad={greet}>
+        <section className="relative" onLoad={greet} >
             <video className={`w-screen ${ videoIndex === 2 && window.matchMedia("(min-width: 1536px)").matches ? '-translate-y-32' : '-translate-y-0' } `} autoPlay={true} muted loop={true} mutedplaysinline="">
                 <source className="" src={videoSources[videoIndex]} type="video/webm" />
             </video>

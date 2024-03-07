@@ -2,14 +2,14 @@ import React from "react"
 import gsap from "gsap"
 
 export default function Content(props) {
-    return (
-        <section className="relative">
+    return ( 
+        <section className="relative ">
             
             <div id="profile" className="
                 absolute left-10 
-                bottom-[14rem]
-                xl:bottom-[14rem] 
-                2xl:bottom-[25rem] 
+                bottom-[9rem]
+                xl:bottom-[10rem]  
+                2xl:bottom-[20rem] 
                 duration-200
                 text-black
                 
