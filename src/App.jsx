@@ -7,7 +7,7 @@ import { greet, faqSlideIn, popUpAlert, showContentHero } from "./helpers"
 
 function App() {
 
-  let index = Math.floor(Math.random() * 3)
+  let index = Math.floor(Math.random() * 6)
   const [ videoIndex, setVideoIndex ] = useState(index)
 
   useEffect(() => {
@@ -32,7 +32,7 @@ function App() {
         </div>
 
         <div className="hidden lg:block relative">
-          <Alert />
+          <Alert videoIndex={videoIndex} />
           <Hero videoIndex={videoIndex} />
           <FAQ videoIndex={videoIndex} />
           <Badge videoIndex={videoIndex} />
