@@ -2,17 +2,26 @@ import React from "react"
 import { greet } from "../helpers";
 import Content from "./Content"
 
-export default function Hero(props) {
+export default function Hero({ videoIndex }) {
+
+    let videoSources = [
+        'https://firebasestorage.googleapis.com/v0/b/image-gallery-3010c.appspot.com/o/video2-converted.webm?alt=media&token=8217fa0d-6f8b-4f59-9d80-05b2dc00bfc2', 
+        'https://firebasestorage.googleapis.com/v0/b/image-gallery-3010c.appspot.com/o/video3-converted.webm?alt=media&token=acd0df7f-5a6f-48c8-b347-9369ce398dd9', 
+        'https://firebasestorage.googleapis.com/v0/b/image-gallery-3010c.appspot.com/o/video4-converted.webm?alt=media&token=fb0f2a7d-0164-4c6e-81a5-d8aef66df5ac'
+    ]
+
+    // 0 - ocean 
+    // 1 - gold
+    // 2 - flower
 
     return (
         <section className="relative" onLoad={greet}>
-            <video className="" autoPlay={true} muted loop={true} mutedplaysinline="">
-                <source src='https://firebasestorage.googleapis.com/v0/b/image-gallery-3010c.appspot.com/o/video2.mp4?alt=media&token=0e2e74df-3e89-41cd-b4b5-006fa15e3f1c' type="video/mp4" />
-                {/* <source src={heroVid} type="video/mp4" /> */}
+            <video className={`w-screen ${ videoIndex === 2 && window.matchMedia("(min-width: 1536px)").matches ? '-translate-y-32' : '-translate-y-0' } `} autoPlay={true} muted loop={true} mutedplaysinline="">
+                <source className="" src={videoSources[videoIndex]} type="video/webm" />
             </video>
 
             <audio id="bg-audio">
-                <source src="https://firebasestorage.googleapis.com/v0/b/image-gallery-3010c.appspot.com/o/audio2.mp3?alt=media&token=247202bf-a038-4c9d-958d-7358fad9a08c" type="audio/mp3" ></source>
+                <source src="https://firebasestorage.googleapis.com/v0/b/image-gallery-3010c.appspot.com/o/audio2.mp3?alt=media&token=247202bf-a038-4c9d-958d-7358fad9a08c" type="audio/mpeg" ></source>
                 {/* <source src={heroAudio} type="audio/mp3" ></source> */}
             </audio>
 
