@@ -83,13 +83,7 @@ export default function FAQ({ videoIndex }) {
 
                 {/* other portfolios */}
                 <div className="group py-2 h-auto btn bg-slate-50 flex flex-row items-center justify-between gap-2 ">
-                    {
-                        window.matchMedia("(max-width: 1280px)").matches ? 
-                            ''
-                        :
-                            <Avatar />
-                    }
-
+                    <Avatar />
                     
                     <p className={` ${ window.matchMedia("(max-width: 1280px)").matches ? 'w-full' : '' } justify-between font-light flex items-end gap-2 text-slate-800 group-hover:text-slate-50 `}>
                         Check out my developer friends' portfolios! 

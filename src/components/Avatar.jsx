@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Avatar(props) {
     return (
-        <section className="">
+        <section className="xl:block hidden">
             <div className="avatar-group -space-x-4 rtl:space-x-reverse">
                 <div className="avatar">
                     <div className="avatar-profile">

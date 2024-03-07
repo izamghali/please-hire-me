@@ -1,5 +1,4 @@
 import React from "react"
-import gsap from "gsap"
 
 export default function Content(props) {
     return ( 
@@ -30,7 +29,6 @@ export default function Content(props) {
                 </div>
                 {/* <h2 className="bg-[rgba(255,255,255,0.3)] backdrop-blur-[2px] text-xl">This is content</h2> */}
             </div>
-
 
         </section>
     )

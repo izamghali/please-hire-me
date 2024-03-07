@@ -14,13 +14,10 @@ function App() {
     setVideoIndex(index)
     faqSlideIn()
     popUpAlert()
+    showContentHero()
 
-    if (window.matchMedia("(max-width: 1280px)").matches) {
-      // Viewport is less or equal to 700 pixels wide
-  } else {
-      showContentHero()
-      // Viewport is greater than 700 pixels wide
-  }
+  if (window.matchMedia("(min-width: 1024px)").matches) {
+  } 
 
   }, [])
 
