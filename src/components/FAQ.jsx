@@ -17,9 +17,9 @@ export default function FAQ({ videoIndex }) {
                 <h2 className={` ${ videoIndex === 2 ? 'text-slate-800' : 'text-slate-200' }  font-semibold xl:text-3xl text-xl`}>FAQs</h2>
 
                 {/* FAQ1 */}
-                <div className="collapse collapse-arrow bg-base-200">
+                <div className="collapse collapse-arrow bg-zinc-800 text-white">
                     <input type="radio" name="my-accordion-2" /> 
-                    <div className="collapse-title faq-question">
+                    <div className="collapse-title faq-question bg-zinc-800 text-white">
                         What's a typical day-to-day of a developer look like?
                     </div>
                     <div className="collapse-content faq-ans"> 
@@ -47,9 +47,9 @@ export default function FAQ({ videoIndex }) {
                 </div>
 
                 {/* FAQ2 */}
-                <div className="collapse collapse-arrow bg-base-200">
+                <div className="collapse collapse-arrow bg-zinc-800 text-white">
                     <input type="radio" name="my-accordion-2" /> 
-                    <div className="collapse-title faq-question">
+                    <div className="collapse-title faq-question bg-zinc-800 text-white">
                         Do you need to have a computer-science degree to land a coding job at tech companies?
                     </div>
                     <div className="collapse-content faq-ans"> 
@@ -67,9 +67,9 @@ export default function FAQ({ videoIndex }) {
                 </div>
 
                 {/* FAQ3 */}
-                <div className="collapse collapse-arrow bg-base-200">
+                <div className="collapse collapse-arrow bg-zinc-800 text-white">
                     <input type="radio" name="my-accordion-2" className="hidden xl:block" /> 
-                    <div className="collapse-title faq-question hidden xl:block">
+                    <div className="collapse-title faq-question hidden xl:block bg-zinc-800 text-white">
                         Can you fix my printer? Can you hack my ex's Instagram account? and can you fix the wifi?
                     </div>
                     <div className="collapse-content faq-ans hidden xl:block"> 
@@ -82,7 +82,7 @@ export default function FAQ({ videoIndex }) {
                 </div>
 
                 {/* other portfolios */}
-                <div className="group py-2 h-auto btn bg-slate-50 flex flex-row items-center justify-between gap-2 ">
+                <div className="group py-2 h-auto btn bg-zinc-50 hover:bg-base-200 hover:border-zinc-800 flex flex-row items-center justify-between gap-2 ">
                     <Avatar />
                     
                     <p className={` ${ window.matchMedia("(max-width: 1280px)").matches ? 'w-full' : '' } justify-between font-light flex items-end gap-2 text-slate-800 group-hover:text-slate-50 `}>
