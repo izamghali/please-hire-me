@@ -116,22 +116,22 @@ export function badgesSlideIn() {
     tl.fromTo('#heading-badge', {
         y:140, 
     }, {
-        y:0, delay: 7, ease: 'power1', duration: 2
+        y:0, delay: 7, ease: 'power1', duration: 2, opacity: 1
     })
     tl.fromTo('#badge-codecademy', {
         y:120, 
     }, {
-        y:0, ease: 'expo.out', duration: 1
+        y:0, ease: 'expo.out', duration: 1, opacity: 1
     })
     tl.fromTo('#badge-purwadhika', {
         y:120, 
     }, {
-        y:0, ease: 'expo.out', duration: 1
+        y:0, ease: 'expo.out', duration: 1, opacity: 1
     })
     tl.fromTo('#badge-udemy', {
         y:120, 
     }, {
-        y:0, ease: 'expo.out', duration: 1
+        y:0, ease: 'expo.out', duration: 1, opacity: 1
     })
     
 }
