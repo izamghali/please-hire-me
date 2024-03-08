@@ -41,11 +41,11 @@ function App() {
 
   return (
     <>
-      <section className="relative h-screen overflow-y-hidden" onLoad={handleLoad}>
+      <section className="relative h-screen overflow-hidden" onLoad={handleLoad}>
 
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <Loading />
-        </div>
+        </div> */}
 
         <div className="flex justify-center h-screen lg:hidden relative">
           <div className="absolute max-w-80 top-20">

@@ -5,7 +5,7 @@ import Content from "./Content"
 export default function Hero({ videoIndex }) {
 
     let videoSources = [
-        'https://firebasestorage.googleapis.com/v0/b/image-gallery-3010c.appspot.com/o/video2-converted.webm?alt=media&token=8217fa0d-6f8b-4f59-9d80-05b2dc00bfc2', 
+        'https://firebasestorage.googleapis.com/v0/b/image-gallery-3010c.appspot.com/o/ocean.mp4?alt=media&token=b2e0b459-aed0-4c27-9331-651d4da56f04', 
         'https://firebasestorage.googleapis.com/v0/b/image-gallery-3010c.appspot.com/o/video5.webm?alt=media&token=55674362-8a82-49ad-a33b-684c192e9906', 
         'https://firebasestorage.googleapis.com/v0/b/image-gallery-3010c.appspot.com/o/video4-converted.webm?alt=media&token=fb0f2a7d-0164-4c6e-81a5-d8aef66df5ac',
     ]
@@ -34,13 +34,25 @@ export default function Hero({ videoIndex }) {
 
     return (
         <section className="relative" onLoad={greet} >
-            <video onCanPlayThrough={handlePlayThrough} onProgress={handleProgress} className={`w-screen ${ videoIndex === 2 && window.matchMedia("(min-width: 1536px)").matches ? '-translate-y-32' : '-translate-y-0' } `} autoPlay={true} muted loop={true} mutedplaysinline="">
-                <source className="" src={videoSources[videoIndex]} type="video/webm" />
+            <video onCanPlayThrough={handlePlayThrough} onProgress={handleProgress} className={`
+            w-screen  
+            ${ videoIndex === 2 && window.matchMedia("(min-width: 1536px)").matches ? '-translate-y-32' : '-translate-y-0' }
+            `} autoPlay={true} muted loop={true} mutedplaysinline="">
+
+                <source className="" src={videoSources[videoIndex]} type={` ${videoIndex === 0 ? "video/mp4" : "video/webm" } `} />
+
+                {
+                    videoIndex === 0 ?
+                    
+                    <source className="" src="https://firebasestorage.googleapis.com/v0/b/image-gallery-3010c.appspot.com/o/video2-converted.webm?alt=media&token=8217fa0d-6f8b-4f59-9d80-05b2dc00bfc2" type="video/webm" />
+                    :
+                    ''
+                }
+
             </video>
 
             <audio id="bg-audio">
                 <source src={audioSources[videoIndex]} type="audio/mpeg" ></source>
-                {/* <source src={heroAudio} type="audio/mp3" ></source> */}
             </audio>
 
             {/* Greet */}
