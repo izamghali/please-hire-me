@@ -7,7 +7,7 @@ export default function Badge({ videoIndex }) {
         absolute bottom-32 2xl:bottom-60 left-10 translate-y-10 duration-200 
         ">
 
-            <h3 id="heading-badge" className={`opacity-0 text-xl ${ videoIndex === 2 ? 'text-slate-800' : 'text-slate-200' } font-light mb-2 w-fit`}>Powered by: </h3>
+            <h3 id="heading-badge" className={`opacity-0 text-xl ${ videoIndex === 2 ? 'text-slate-800' : 'text-slate-50' } font-light mb-2 w-fit`}>Powered by: </h3>
             
             <div className="flex gap-4">
                 {/* codecademy */}
